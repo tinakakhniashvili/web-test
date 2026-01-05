@@ -21,13 +21,17 @@ public class HerokuappTest extends AbstractTest {
     }
 
     @Test
-    public void successfulLoginTest(){
+    public void successfulLoginAndLogOutTest(){
         softAssert.assertTrue(loginPage.isPageOpened(), "Login page is not opened");
 
         loginPage.fillLoginForm(R.TESTDATA.get("USERNAME"), R.TESTDATA.get("PASSWORD"));
         secureAreaPage = loginPage.clickLoginButton();
 
         softAssert.assertTrue(secureAreaPage.isPageOpened(), "Secure Area Page is not opened");
+
+        secureAreaPage.clickLogoutButton();
+
+        softAssert.assertTrue(loginPage.isPageOpened(), "Login page is not opened");
         softAssert.assertAll();
     }
 

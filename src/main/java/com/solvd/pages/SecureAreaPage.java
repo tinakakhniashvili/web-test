@@ -20,10 +20,6 @@ public class SecureAreaPage extends AbstractPage {
         setUiLoadedMarker(secureAreaHeader);
     }
 
-    public boolean isSecureAreaHeaderDisplayed() {
-        return secureAreaHeader.isDisplayed();
-    }
-
     public void clickLogoutButton() {
         logoutButton.scrollTo();
         this.logoutButton.click();
