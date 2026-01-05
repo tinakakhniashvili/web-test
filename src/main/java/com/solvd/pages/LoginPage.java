@@ -1,14 +1,14 @@
 package com.solvd.pages;
 
-import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage {
 
-    @FindBy(linkText = "Login Page")
+    @FindBy(xpath = "//*[text()='Login Page']")
     private ExtendedWebElement loginHeader;
 
     @FindBy(id="username")
@@ -19,6 +19,9 @@ public class LoginPage extends AbstractPage {
 
     @FindBy(xpath = "//*[contains (@type, 'submit')]")
     private ExtendedWebElement loginButton;
+
+    @FindBy(id="flash")
+    private ExtendedWebElement alertMessage;
 
     public void fillLoginForm(String username, String password) {
         this.username.type(username);
@@ -33,14 +36,11 @@ public class LoginPage extends AbstractPage {
 
     public LoginPage(WebDriver driver) {
         super(driver);
+        setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
+        setUiLoadedMarker(loginHeader);
     }
 
-//    public void openLoginPage(){
-////        openURL("/login");
-//        driver.get(R.CONFIG.get("url"));
-//    }
-
-    public boolean isPageOpened(){
-        return loginHeader.isPresent();
+    public boolean isAlertMessageDisplayed() {
+        return alertMessage.isDisplayed();
     }
 }

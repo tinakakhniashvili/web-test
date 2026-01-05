@@ -1,7 +1,0 @@
-[2026-01-05 01:12:41] [1] [WARN] Reporting disabled: using no op test run registrar
-[2026-01-05 01:12:41] [1] [INFO] TEST [WebTest - successfulLoginTest] STARTED at [17:12:41 2026-01-05]
-[2026-01-05 01:13:07] [1] [INFO] Keys 'tomsmith' are sent to element 'username'.
-[2026-01-05 01:13:08] [1] [INFO] Keys 'SuperSecretPassword!' are sent to element 'password'.
-[2026-01-05 01:13:10] [1] [INFO] Element 'loginButton' is clicked.
-[2026-01-05 01:13:31] [1] [WARN] Actual URL differs from expected one. Expected 'https://the-internet.herokuapp.com/login' but found 'https://the-internet.herokuapp.com/secure'
-[2026-01-05 01:13:31] [1] [INFO] TEST [WebTest - successfulLoginTest] PASSED at [17:13:31 2026-01-05]
