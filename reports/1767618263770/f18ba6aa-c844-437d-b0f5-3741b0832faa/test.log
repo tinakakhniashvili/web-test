@@ -1,0 +1,39 @@
+[2026-01-05 01:04:27] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-01-05 01:04:27] [1] [INFO] TEST [WebTest - successfulLoginTest] STARTED at [17:04:27 2026-01-05]
+[2026-01-05 01:04:27] [1] [INFO] INFO: opening url 'https://the-internet.herokuapp.com/login'
+[2026-01-05 01:04:51] [1] [INFO] Keys 'tomsmith' are sent to element 'username'.
+[2026-01-05 01:04:52] [1] [INFO] Keys 'SuperSecretPassword!' are sent to element 'password'.
+[2026-01-05 01:04:52] [1] [INFO] Element 'loginButton' is clicked.
+[2026-01-05 01:05:12] [1] [WARN] Actual URL differs from expected one. Expected 'https://the-internet.herokuapp.com' but found 'https://the-internet.herokuapp.com/secure'
+[2026-01-05 01:05:13] [1] [ERROR] TEST [WebTest - successfulLoginTest] FAILED at [17:05:13 2026-01-05] - The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+com.solvd.tests.HerokuappTest.successfulLoginTest(HerokuappTest.java:30)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

@@ -1,0 +1,21 @@
+[2026-01-05 01:07:51] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== WebDriver configuration ===========
+url=https://the-internet.herokuapp.com
+browser=chrome
+selenium_url=http://localhost:4444
+-------------- Driver capabilities ------------
+===============================================
+
+[2026-01-05 01:07:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-01-05 01:07:52] [1] [INFO] [TestNG] Running:
+  /Users/lesifuges/Library/Caches/JetBrains/IntelliJIdea2025.2/temp-testng-customsuite.xml
+
+[2026-01-05 01:07:52] [1] [INFO] Set thread-count=1
+[2026-01-05 01:07:52] [1] [INFO] Set data-provider-thread-count=1
+[2026-01-05 01:07:52] [1] [INFO] CARINA_CORE_VERSION: 1.2.6
+[2026-01-05 01:07:52] [1] [INFO] Starting driver session...
+[2026-01-05 01:07:56] [1] [INFO] Driver session started.
+[2026-01-05 01:08:44] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2026-01-05 01:08:44] [1] [INFO] RESULT #1: TEST [WebTest - successfulLoginTest] FAIL [log=file:///Users/lesifuges/Desktop/WebTest/reports/1767618471962/f7034963-a073-44c8-836e-ce50c67fb614/test.log]
