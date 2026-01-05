@@ -1,6 +1,0 @@
-[2026-01-05 08:11:53] [1] [WARN] Reporting disabled: using no op test run registrar
-[2026-01-05 08:11:53] [1] [INFO] TEST [web-test - unsuccessfulLoginTest] STARTED at [00:11:53 2026-01-06]
-[2026-01-05 08:11:53] [1] [INFO] Keys '${generate_words:20}' are sent to element 'username'.
-[2026-01-05 08:11:54] [1] [INFO] Keys '${generate_words:20}' are sent to element 'password'.
-[2026-01-05 08:11:54] [1] [INFO] Element 'loginButton' is clicked.
-[2026-01-05 08:12:15] [1] [INFO] TEST [web-test - unsuccessfulLoginTest] PASSED at [00:12:15 2026-01-06]
